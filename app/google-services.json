@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "443666556816",
+    "firebase_url": "https://mcqeducation-cf9d5.firebaseio.com",
+    "project_id": "mcqeducation-cf9d5",
+    "storage_bucket": "mcqeducation-cf9d5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:443666556816:android:039c090dbcf067264f3515",
+        "android_client_info": {
+          "package_name": "com.udayasreesoftwaresolution.mcqeducation"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "443666556816-nbgodnikbgk510qm2matu30vlggc5km8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.udayasreesoftwaresolution.mcqeducation",
+            "certificate_hash": "8b1bf1d6128e83d57ca22c6717e0d6821a3ab663"
+          }
+        },
+        {
+          "client_id": "443666556816-4qmoe4gsm10r035ol220ps5q7rsqihm7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCKurCxjVu4KEJccSq5SvHIyO6gx6DuRf8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "443666556816-4qmoe4gsm10r035ol220ps5q7rsqihm7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

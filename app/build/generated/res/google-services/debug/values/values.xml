@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">443666556816-4qmoe4gsm10r035ol220ps5q7rsqihm7.apps.googleusercontent.com</string>
+    <string name="firebase_database_url" translatable="false">https://mcqeducation-cf9d5.firebaseio.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">443666556816</string>
+    <string name="google_api_key" translatable="false">AIzaSyCKurCxjVu4KEJccSq5SvHIyO6gx6DuRf8</string>
+    <string name="google_app_id" translatable="false">1:443666556816:android:039c090dbcf067264f3515</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyCKurCxjVu4KEJccSq5SvHIyO6gx6DuRf8</string>
+    <string name="google_storage_bucket" translatable="false">mcqeducation-cf9d5.appspot.com</string>
+    <string name="project_id" translatable="false">mcqeducation-cf9d5</string>
+</resources>

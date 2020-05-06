@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/view_gradient"
+    android:padding="@dimen/padding_10dp"
+    tools:context=".fragment.RegisterFragment">
+
+    <TextView
+        android:id="@+id/register_title_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/padding_10dp"
+        android:text="@string/register_title"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/register_card_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="@dimen/padding_20dp"
+        android:layout_above="@+id/register_register_btn_id"
+        android:layout_below="@id/register_title_id"
+        app:cardCornerRadius="@dimen/padding_10dp"
+        app:cardElevation="@dimen/padding_6dp">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:padding="@dimen/padding_6dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/padding_16dp"
+                        android:background="@drawable/border"
+                        android:orientation="vertical"
+                        android:padding="@dimen/padding_6dp">
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/register_name_layout_id"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/padding_10dp">
+
+                            <EditText
+                                android:id="@+id/register_name_text_id"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:drawableStart="@drawable/icon_person"
+                                android:drawableLeft="@drawable/icon_person"
+                                android:drawableEnd="@drawable/required_field_16"
+                                android:drawableRight="@drawable/required_field_16"
+                                android:hint="@string/user_name"
+                                android:imeOptions="actionNext"
+                                android:inputType="textPersonName"
+                                android:maxLines="1"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                                android:textColor="@color/text_color"
+                                android:textColorHint="@color/text_color" />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/register_mobile_layout_id"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/padding_20dp">
+
+                            <EditText
+                                android:id="@+id/register_mobile_text_id"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:drawableStart="@drawable/icon_phone"
+                                android:drawableLeft="@drawable/icon_phone"
+                                android:drawableEnd="@drawable/required_field_16"
+                                android:drawableRight="@drawable/required_field_16"
+                                android:hint="@string/mobile_number"
+                                android:imeOptions="actionNext"
+                                android:inputType="phone"
+                                android:maxLength="10"
+                                android:maxLines="1"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                                android:textColor="@color/text_color"
+                                android:textColorHint="@color/text_color" />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/register_email_layout_id"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/padding_10dp">
+
+                            <EditText
+                                android:id="@+id/register_email_text_id"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:drawableStart="@drawable/icon_email"
+                                android:drawableLeft="@drawable/icon_email"
+                                android:drawableEnd="@drawable/required_field_16"
+                                android:drawableRight="@drawable/required_field_16"
+                                android:hint="@string/email"
+                                android:imeOptions="actionNext"
+                                android:inputType="textEmailAddress"
+                                android:maxLines="1"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                                android:textColor="@color/text_color"
+                                android:textColorHint="@color/text_color" />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/register_password_layout_id"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/padding_20dp">
+
+                            <EditText
+                                android:id="@+id/register_password_text_id"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:drawableStart="@drawable/icon_password"
+                                android:drawableLeft="@drawable/icon_password"
+                                android:drawableEnd="@drawable/required_field_16"
+                                android:drawableRight="@drawable/required_field_16"
+                                android:hint="@string/password"
+                                android:imeOptions="actionNext"
+                                android:inputType="textPassword"
+                                android:maxLines="1"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                                android:textColor="@color/text_color"
+                                android:textColorHint="@color/text_color" />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/register_repassword_layout_id"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/padding_20dp">
+
+                            <EditText
+                                android:id="@+id/register_repassword_text_id"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:drawableStart="@drawable/icon_password"
+                                android:drawableLeft="@drawable/icon_password"
+                                android:drawableEnd="@drawable/required_field_16"
+                                android:drawableRight="@drawable/required_field_16"
+                                android:hint="@string/repassword"
+                                android:imeOptions="actionDone"
+                                android:inputType="textPassword"
+                                android:maxLines="1"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                                android:textColor="@color/text_color"
+                                android:textColorHint="@color/text_color" />
+                        </com.google.android.material.textfield.TextInputLayout>
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/register_credentials_title_id"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/padding_16dp"
+                        android:layout_marginLeft="@dimen/padding_16dp"
+                        android:background="@color/white"
+                        android:text="@string/credentials"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                        android:textColor="@color/colorPrimary" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/padding_16dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/padding_16dp"
+                        android:background="@drawable/border"
+                        android:orientation="vertical"
+                        android:padding="@dimen/padding_6dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/padding_6dp">
+
+                            <TextView
+                                android:id="@+id/register_course_title_id"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/course"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                                android:textColor="@color/gray" />
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:src="@drawable/required_field_16" />
+
+                            <Spinner
+                                android:id="@+id/register_course_spinner_id"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                style="@android:style/Widget.Holo.Light.Spinner"
+                                android:layout_below="@+id/register_course_title_id"
+                                android:layout_marginTop="@dimen/padding_2dp" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/padding_6dp">
+
+                            <TextView
+                                android:id="@+id/register_stream_title_id"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/stream_course"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                                android:textColor="@color/gray" />
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:src="@drawable/required_field_16" />
+
+                            <Spinner
+                                android:id="@+id/register_stream_spinner_id"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                style="@android:style/Widget.Holo.Light.Spinner"
+                                android:layout_below="@+id/register_stream_title_id"
+                                android:layout_marginTop="@dimen/padding_2dp" />
+                        </RelativeLayout>
+
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/padding_6dp">
+
+                            <TextView
+                                android:id="@+id/register_class_title_id"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/class_course"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                                android:textColor="@color/gray" />
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:src="@drawable/required_field_16" />
+
+                            <Spinner
+                                android:id="@+id/register_class_spinner_id"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                style="@android:style/Widget.Holo.Light.Spinner"
+                                android:layout_below="@+id/register_class_title_id"
+                                android:layout_marginTop="@dimen/padding_2dp" />
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/registrer_course_detail_title_id"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/padding_16dp"
+                        android:layout_marginLeft="@dimen/padding_16dp"
+                        android:background="@color/white"
+                        android:text="@string/course_details"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                        android:textColor="@color/colorPrimary" />
+                </RelativeLayout>
+            </LinearLayout>
+        </ScrollView>
+    </androidx.cardview.widget.CardView>
+
+
+    <Button
+        android:id="@+id/register_register_btn_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/login_register_id"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/padding_20dp"
+        android:background="@drawable/login_button_shape"
+        android:text="@string/register"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/login_register_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/signup_login_hint"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+</RelativeLayout>

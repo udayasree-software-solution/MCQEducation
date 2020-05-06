@@ -1,0 +1,2 @@
+rootProject.name='MCQ Education'
+include ':app'

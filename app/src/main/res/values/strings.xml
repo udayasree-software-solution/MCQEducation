@@ -1,0 +1,51 @@
+<resources>
+    <string name="app_name">MCQ Education</string>
+    <string name="company_name">By Udayasree Software Solution</string>
+
+    <string name="signup_login_hint">Already have an account? <font color="blue">Login</font></string>
+    <string name="login_signup_hint">Don\'t have an account? <font color="blue">Register</font></string>
+    <string name="forgot_password">Forget password? <font color="red">Reset</font></string>
+
+    <string name="register_title"><u>REGISTER</u></string>
+    <string name="login_title"><u>LOGIN</u></string>
+    <string name="signup">Sign Up</string>
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+
+    <string name="user_name">User Name</string>
+    <string name="sur_name">SurName</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="repassword">Retype password</string>
+    <string name="mobile_number">Mobile Number</string>
+
+    <string name="password_error">Password is blank</string>
+    <string name="pswd_error">Please enter password with minimum of 8 characters</string>
+    <string name="pswd_mismatch_error">Password mismatch</string>
+    <string name="mobile_number_error">Please enter a valid mobile number</string>
+    <string name="email_error">Please enter a valid Email-Id</string>
+    <string name="name_error">Please enter User Name</string>
+    <string name="sur_name_error">Please enter SurName</string>
+    <string name="server_error">Fail to connect to server. Please try again later</string>
+
+    <string name="course_error">Please select your course</string>
+    <string name="stream_error">Please select your specialization</string>
+    <string name="class_error">Please select your class</string>
+
+    <string name="connecting">Connecting to server</string>
+    <string name="loading">Loading</string>
+    <string name="course_details"><b>  Course Details  </b></string>
+    <string name="class_course">Class</string>
+    <string name="stream_course">specialization</string>
+    <string name="course">Course</string>
+    <string name="credentials"><b>  User Credentials  </b></string>
+
+    <string name="class_course_prompt">Select Class</string>
+    <string-array name="class_course">
+        <item>First Year</item>
+        <item>Second Year</item>
+        <item>Third Year</item>
+        <item>Fourth Year</item>
+        <item>Fifth Year</item>
+    </string-array>
+</resources>
